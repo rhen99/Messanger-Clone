@@ -1,0 +1,96 @@
+.chat {
+  &-me {
+    display: flex;
+    align-items: center;
+    & > div {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background: #e2e2e2 url("../../img/no_profile.jpg") no-repeat center
+        center / cover;
+    }
+  }
+  &-header {
+    display: flex;
+    padding: 1rem;
+    padding-right: 0;
+  }
+  &-title {
+    flex: 1 1 auto;
+    padding: 0 0.5rem;
+  }
+  &-nav {
+    flex: 1 1 auto;
+    &-list {
+      display: flex;
+    }
+    &-item {
+      padding: 0 0.5rem;
+      a {
+        display: flex;
+        background-color: #e2e2e2;
+        width: 30px;
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+      }
+      img {
+        display: inline-block;
+        width: 15px;
+      }
+    }
+  }
+  &-search {
+    padding: 1rem 0.5rem;
+    padding-bottom: 2rem;
+  }
+  &-form {
+    &-div {
+    }
+    &-input {
+      width: 100%;
+      padding: 0.2rem 1rem;
+      border-radius: 16px;
+      border: none;
+      font-size: 17px;
+      background-color: #e2e2e2;
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+  &-heads {
+    height: 100%;
+  }
+  &-list {
+    margin: 0 1rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #000;
+    &-item {
+      padding: 1rem 0;
+      display: flex;
+      cursor: pointer;
+      &:hover {
+        background-color: darken(#fff, 5);
+      }
+    }
+  }
+  &-text {
+    flex: 1 1 auto;
+  }
+  &-avatar {
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+    & > div {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: url("../../img/no_profile.jpg") center center / cover;
+    }
+  }
+}
+.current-chat {
+  background-color: darken(#fff, 5);
+}

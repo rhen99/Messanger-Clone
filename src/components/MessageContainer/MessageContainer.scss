@@ -1,0 +1,23 @@
+.message {
+  &-container {
+  }
+  &-intro {
+    &-avatar {
+      height: 20vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & > div {
+        width: 100px;
+        height: 100px;
+        background: url("../../img/no_profile.jpg") no-repeat center center /
+          cover;
+        border-radius: 50%;
+      }
+    }
+    &-name {
+      text-align: center;
+      font-size: 30px;
+    }
+  }
+}

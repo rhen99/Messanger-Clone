@@ -1,0 +1,45 @@
+.options {
+  display: flex;
+  flex-direction: column;
+  &-header {
+    &-avatar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem 0;
+      div {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: url("../../img/no_profile.jpg") no-repeat center center /
+          cover;
+      }
+    }
+    &-name {
+      text-align: center;
+    }
+  }
+  &-nav {
+    flex: 1 1 auto;
+    &-list {
+    }
+    &-item {
+      a {
+        display: block;
+        position: relative;
+        padding: 1rem;
+        font-size: 18px;
+        font-weight: 700;
+        color: #333;
+        &:hover {
+          background-color: darken(#fff, 5);
+        }
+        img {
+          position: absolute;
+          width: 20px;
+          right: 5%;
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,45 @@
 .message {
+  &-mine {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    &-text {
+      padding: 0.5rem;
+      display: flex;
+    }
+    &-bubble {
+      background-color: #006aff;
+      color: #fff;
+      padding: 0.5rem 0.8rem;
+      border-radius: 20px;
+    }
+  }
+  &-friend {
+    display: flex;
+    position: relative;
+    &-avatar {
+      div {
+        width: 40px;
+        height: 40px;
+        background: url("../../img/no_profile.jpg") no-repeat center center /
+          cover;
+        border-radius: 50%;
+      }
+    }
+    &-text {
+      padding: 0.5rem;
+      display: flex;
+    }
+    &-bubble {
+      background-color: #f3f3f3;
+      color: #333;
+      padding: 0.5rem 0.8rem;
+      border-radius: 20px;
+    }
+  }
   &-container {
+    position: relative;
+    flex: 1 1 auto;
   }
   &-intro {
     &-avatar {
@@ -19,5 +59,11 @@
       text-align: center;
       font-size: 30px;
     }
+  }
+  &-conversation {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
   }
 }
